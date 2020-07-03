@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Controle de gastos</title>
+  </head>
+  <body>
+    <h2>Controle de gastos</h2>
+
+    <div class="container">
+      <h4>Saldo em conta</h4>
+      <h1 id="balance">R$0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Entradas</h4>
+          <p id="money-plus" class="money plus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Saídas</h4>
+          <p id="money-minus" class="money minus">-R$0.00</p>
+        </div>
+      </div>
+
+      <h3>Histórico</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+
+      <h3>Adicionar nova transação</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Descrição</label>
+          <input type="text" id="text" placeholder="insira a descrição..." />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Quantia <br />
+            ( Negativo : Saídas, Positivo : Entradas)</label
+          >
+          <input type="number" id="amount" placeholder="Insira a quantia..." />
+        </div>
+        <button class="btn">Adicionar nova transação</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
